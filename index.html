@@ -684,19 +684,18 @@ footer a:hover { text-decoration: underline; }
 <div class="share-section">
   <p class="share-title">📣 叫你的朋友一齊嚟！分享給他們：</p>
   <div class="share-buttons">
-    <a href="https://wa.me/?text=%F0%9F%8F%9D%EF%B8%8F%20Teen%20%E8%A1%8C%E8%80%852026%20%E6%9A%91%E5%81%87%E6%B4%BB%E5%8B%95%20%E3%80%8C%E5%90%8C%E8%A1%8C%E3%80%8D%0A%F0%9F%8C%8A%20%E5%B0%8F%E5%9F%8E%E5%A4%8F%E5%A4%A9%EF%BC%8C%E6%88%91%E5%80%91%E7%9B%B8%E9%81%87%EF%BC%81%0A11%2F7%20%E8%87%B3%2015%2F8%20%E9%80%A2%E6%98%9F%E6%9C%9F%E5%85%AD%202%3A30-5%3A00pm%0A%E5%9F%BA%E7%9D%A3%E6%95%99%E7%89%A7%E6%84%9B%E5%A0%82%EF%BC%88%E6%B2%99%E7%94%B0%E7%9F%B3%E9%96%80%EF%BC%89%0A%E5%A0%B1%E5%90%8D%EF%BC%9A%20https%3A%2F%2Fforms.gle%2FDWiLJAaeqckiufkD7"
-       target="_blank" class="share-btn whatsapp">
+    <button onclick="shareWA()" class="share-btn whatsapp">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       WhatsApp
-    </a>
-    <a href="https://signal.me/#p/+85268991846" target="_blank" class="share-btn signal">
+    </button>
+    <button onclick="shareSignal()" class="share-btn signal">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.097 5.164c-.145.658-.537.818-1.084.508l-3-2.21-.985.948c-.085.085-.222.13-.374.13l.226-3.261 4.495-4.063c.194-.173-.043-.265-.301-.092L6.964 11.39l-2.954-.924c-.64-.205-.651-.64.136-.948l11.52-4.442c.537-.194 1.006.13.896.948v.224z"/></svg>
       Signal
-    </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://forms.gle/DWiLJAaeqckiufkD7" target="_blank" class="share-btn facebook">
+    </button>
+    <button onclick="shareFB()" class="share-btn facebook">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
       Facebook
-    </a>
+    </button>
     <button onclick="copyLink()" class="share-btn copy">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
       複製連結
@@ -719,14 +718,44 @@ footer a:hover { text-decoration: underline; }
 </footer>
 
 <script>
+// Always share this landing page URL (not the registration form)
+function pageUrl() {
+  return window.location.href;
+}
+
+const shareText = '🏝️ Teen 行者 2026 暑假活動「同行」\n🌴 小城夏天，我們相遇！\n11/7 至 15/8 逢星期六 2:30-5:00pm\n基督教牧愛堂（沙田石門）\n\n👉 ';
+
+function shareWA() {
+  const msg = encodeURIComponent(shareText + pageUrl());
+  window.open('https://wa.me/?text=' + msg, '_blank');
+}
+
+function shareSignal() {
+  // Signal uses the same share URL scheme as WhatsApp on mobile
+  const msg = encodeURIComponent(shareText + pageUrl());
+  // Try native share first on mobile, fallback to copy
+  if (navigator.share) {
+    navigator.share({ title: 'Teen 行者 2026 同行', text: shareText, url: pageUrl() })
+      .catch(() => {});
+  } else {
+    window.open('https://signal.me/#?compose=' + msg, '_blank');
+  }
+}
+
+function shareFB() {
+  const url = encodeURIComponent(pageUrl());
+  window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank');
+}
+
 function copyLink() {
-  const url = 'https://forms.gle/DWiLJAaeqckiufkD7';
+  const url = pageUrl();
   navigator.clipboard.writeText(url).then(showFb).catch(() => {
     const t = document.createElement('textarea');
     t.value = url; document.body.appendChild(t); t.select();
     document.execCommand('copy'); document.body.removeChild(t); showFb();
   });
 }
+
 function showFb() {
   const fb = document.getElementById('copyFeedback');
   fb.style.display = 'block';
